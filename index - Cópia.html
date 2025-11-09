@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoLearn - Centro de Formação Moçambicano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>InfoLearn</h1>
+        <p>Centro de Formação Profissional em Moçambique</p>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Pesquisar cursos...">
+            <button id="searchBtn">&#128269;</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="courses" class="courses-container">
+            <!-- Curso exemplo -->
+            <div class="course-card" data-name="Confeitaria">
+                <img src="curso1.jpg" alt="Confeitaria">
+                <h3>Confeitaria</h3>
+                <p>Escolha duração:</p>
+                <select class="course-duration">
+                    <option value="1">1 mês - 450 MT online / 2.500 MT presencial</option>
+                    <option value="3">3 meses - 4.500 MT online / 7.000 MT presencial</option>
+                </select>
+                <button class="enroll-btn" data-course="Confeitaria">Inscrever-se</button>
+            </div>
+
+            <div class="course-card" data-name="Culinária">
+                <img src="curso2.jpg" alt="Culinária">
+                <h3>Culinária</h3>
+                <p>Escolha duração:</p>
+                <select class="course-duration">
+                    <option value="1">1 mês - 450 MT online / 2.500 MT presencial</option>
+                    <option value="3">3 meses - 4.500 MT online / 7.000 MT presencial</option>
+                </select>
+                <button class="enroll-btn" data-course="Culinária">Inscrever-se</button>
+            </div>
+
+            <div class="course-card" data-name="Informática">
+                <img src="curso3.jpg" alt="Informática">
+                <h3>Informática</h3>
+                <p>Escolha duração:</p>
+                <select class="course-duration">
+                    <option value="1">1 mês - 450 MT online / 2.500 MT presencial</option>
+                    <option value="3">3 meses - 4.500 MT online / 7.000 MT presencial</option>
+                </select>
+                <button class="enroll-btn" data-course="Informática">Inscrever-se</button>
+            </div>
+
+            <div class="course-card" data-name="Programação">
+                <img src="curso4.jpg" alt="Programação">
+                <h3>Programação</h3>
+                <p>Escolha duração:</p>
+                <select class="course-duration">
+                    <option value="1">1 mês - 450 MT online / 2.500 MT presencial</option>
+                    <option value="3">3 meses - 4.500 MT online / 7.000 MT presencial</option>
+                </select>
+                <button class="enroll-btn" data-course="Programação">Inscrever-se</button>
+            </div>
+
+            <div class="course-card" data-name="Design Gráfico">
+                <img src="curso5.jpg" alt="Design Gráfico">
+                <h3>Design Gráfico</h3>
+                <p>Escolha duração:</p>
+                <select class="course-duration">
+                    <option value="1">1 mês - 450 MT online / 2.500 MT presencial</option>
+                </select>
+                <button class="enroll-btn" data-course="Design Gráfico">Inscrever-se</button>
+            </div>
+
+            <div class="course-card" data-name="Secretariado">
+                <img src="curso6.jpg" alt="Secretariado">
+                <h3>Secretariado</h3>
+                <p>Escolha duração:</p>
+                <select class="course-duration">
+                    <option value="1">1 mês - 450 MT online / 2.500 MT presencial</option>
+                </select>
+                <button class="enroll-btn" data-course="Secretariado">Inscrever-se</button>
+            </div>
+        </section>
+
+        <div class="more-courses">
+            <button id="moreCoursesBtn">Saber mais cursos</button>
+        </div>
+    </main>
+
+    <!-- Modal Formulário -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2 id="modalCourseName">Inscrição no Curso</h2>
+            <form id="enrollForm">
+                <input type="text" name="name" placeholder="Nome completo" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Telefone / WhatsApp" required>
+                <input type="text" name="city" placeholder="Cidade" required>
+                <input type="number" name="age" placeholder="Idade" required>
+                <select name="mode" required>
+                    <option value="">Modo de curso</option>
+                    <option value="Online">Online</option>
+                    <option value="Presencial">Presencial</option>
+                </select>
+                <p id="priceInfo"></p>
+                <button type="submit">Enviar inscrição via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 InfoLearn. Todos os direitos reservados.</p>
+        <p>Contato: infolearn8441@gmail.com | M-Pesa: 844180213 | Emaola: 878080213</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
